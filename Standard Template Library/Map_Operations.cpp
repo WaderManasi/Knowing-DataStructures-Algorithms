@@ -51,6 +51,6 @@ int main()
     mapDisplay(mp,x);
     
     mapErase(mp,x);
-    setDisplay(mp);
+    mapDisplay(mp);
     return 0;
 }
