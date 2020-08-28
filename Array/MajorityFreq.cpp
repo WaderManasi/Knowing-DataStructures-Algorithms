@@ -12,6 +12,10 @@ int majorityWins(int arr[], int n, int x,int y)
     
     for(int i=0;i<n;i++)
     {
+        /*
+        count_x=count(arr,arr+n,x);
+        count_y=count(arr,arr+n,y);
+        */
         if(arr[i]==x)
         count_x++;
         if(arr[i]==y)
