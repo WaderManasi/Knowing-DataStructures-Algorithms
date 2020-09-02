@@ -4,9 +4,7 @@
 bool searchLinkedList(Node *head, int x)
 {
    int pos=1;
-   
    Node* temp=head;
-   
    while(temp!=NULL)
    {
        if(temp->data==x)
