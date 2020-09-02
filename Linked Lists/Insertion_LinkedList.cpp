@@ -13,6 +13,7 @@ Node *insertAtBegining(Node *head, int newData) {
    }
    return head;
 }
+
 // function appends the data at the end of the list
 Node *insertAtEnd(Node *head, int newData)  {
   Node *newn=new Node(newData);
