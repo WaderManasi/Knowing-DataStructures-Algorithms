@@ -1,5 +1,5 @@
 //Given a linked list of size n, you have to delete the tail (last element) in the linked list.
-
+//solution
 
 Node* deleteTail(Node *head)
 {
