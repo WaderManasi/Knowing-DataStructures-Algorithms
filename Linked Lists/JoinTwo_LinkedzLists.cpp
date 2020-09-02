@@ -1,3 +1,5 @@
+//Given two linked lists of size n1 and n2 respectively, 
+//you have to join the head of second list to the tail of first so that we can traverse both the lists using head of 1st list.
 Node * joinTheLists(Node * head1, Node * head2)
 {
     if(head1==NULL)
