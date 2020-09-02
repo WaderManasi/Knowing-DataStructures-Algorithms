@@ -5,6 +5,8 @@ Node* deleteHead(Node *head)
 {
     Node* temp=head->next;
     head->next=NULL;
+
     delete head;
+    
     return temp;
 }
