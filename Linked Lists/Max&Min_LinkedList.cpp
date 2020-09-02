@@ -1,6 +1,7 @@
 //Given a singly linked list of N elements. The task is to find the maximum and minimum element.
 //solution
 
+//to find max element
 int maximum(Node *head)
 {
    vector<int>v;
