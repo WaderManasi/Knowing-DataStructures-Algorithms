@@ -1,5 +1,6 @@
 //Given a singly linked list of size N. The task is to sum the elements of the linked list.
 //solution
+
 int sumOfElements(Node *head)
 {
    int sum=0;
