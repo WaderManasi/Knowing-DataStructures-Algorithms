@@ -1,5 +1,5 @@
 //Given a circular linked list of size N, you need to insert an element data after the tail.
-The tail of the linked list is connected to head.
+//The tail of the linked list is connected to head.
 
 Node *insertInTail(Node * head, int data)
 {
