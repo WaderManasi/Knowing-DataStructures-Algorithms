@@ -1,6 +1,6 @@
 //Given a circular linked list of size N, you need to insert an element data before the head and make it the new head. The tail of the linked list is connected to head.
 
-
+//solution
 Node *insertInHead(Node * head, int data)
 {
     Node* newn=new Node(data);
