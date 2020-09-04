@@ -1,3 +1,5 @@
+//reversing array using stack
+
 void reverseArray(int n, int* arr){
     stack<int>s;
     for(int i=0;i<n;i++)
