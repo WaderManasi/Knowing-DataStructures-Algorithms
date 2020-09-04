@@ -1,3 +1,5 @@
+
+//solution
 bool isCircular(Node *head)
 {
    if(head==NULL || head->next==head) return true;
