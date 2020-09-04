@@ -1,3 +1,6 @@
+//Given a circular linked list of size n, you have to delete the tail (last element) in the linked list.
+//In a circular linked list, the tail is connect to the head using the next pointer.
+
 Node * deleteTail(Node * head)
 {
     if(head==NULL)  return NULL;
