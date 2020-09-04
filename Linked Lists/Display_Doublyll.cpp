@@ -1,3 +1,5 @@
+//Given a doubly linked list of n elements. The task is to display the linked list.
+
 vector<int> displayList(Node *head)
 {
     vector<int>v;
