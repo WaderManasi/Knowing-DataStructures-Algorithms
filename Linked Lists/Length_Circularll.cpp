@@ -1,3 +1,5 @@
+
+//solution
 int length(Node* head)
 {
 int ct=0;
