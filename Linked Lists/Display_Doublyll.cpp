@@ -1,4 +1,5 @@
 //Given a doubly linked list of n elements. The task is to display the linked list.
+//solution
 
 vector<int> displayList(Node *head)
 {
