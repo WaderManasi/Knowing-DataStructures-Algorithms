@@ -1,3 +1,5 @@
+//stack operations
+
 void insert(stack<int> &s,int x)
 {
     s.push(x);
