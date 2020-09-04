@@ -1,6 +1,7 @@
 //You are given a circular linked list of size N. You need to insert an element data just after the given position pos.
 //The position of first element is 1. If the given position is greater than N, then don't insert anything as it is not possible.
-As the given linked list is circular, it means that the tail is connected to the head of the lis
+//As the given linked list is circular, it means that the tail is connected to the head of the lis
+
 void insertAtPosition(Node *head, int pos, int data)
 {
     Node *temp=new Node(data);
