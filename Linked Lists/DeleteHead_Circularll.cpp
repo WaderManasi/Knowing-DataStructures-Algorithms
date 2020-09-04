@@ -2,6 +2,7 @@
 //In the circular linked list the tail of the list is connected to the head using the next pointer.
 //Note: Please also set the next of the original head to null.
 
+//solution
 Node * deleteHead(Node *head)
 {
    if(head==NULL)
