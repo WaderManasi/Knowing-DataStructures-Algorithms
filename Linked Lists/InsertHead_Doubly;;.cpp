@@ -1,3 +1,6 @@
+//Given a doubly linked list of size n, you need to insert an element data before the head and make it the new head.
+
+//solution
 Node *insertInHead(Node * head, int data)
 {
     Node* newn = new Node(data);
