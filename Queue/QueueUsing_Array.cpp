@@ -1,3 +1,7 @@
+
+//rear :ahead
+//front :to pop out element
+
 /* The method push to push element into the queue */
 void MyQueue :: push(int x)
 {
@@ -9,7 +13,7 @@ void MyQueue :: push(int x)
   poped out of the queue*/
 int MyQueue :: pop()
 {
-   //
+   //all the elements are popped
    if(front==rear)
     {
         front=rear=0;
