@@ -12,9 +12,12 @@ int main()
     cout<<"\nChar array: "; 
     cout<<str1;*/
     string name,fname;
-    cout<<"Enter full name: ";
+    cout<<"\nEnter full name: ";
     cin>>name;
-    
+    cout<<"\nEnter full name: ";
+    cout<<fname;
+    getline(cin,fname);
+    cout<<name;
     
     cout<<endl;
 }
