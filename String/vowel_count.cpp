@@ -1,4 +1,6 @@
 //vowel count
+
+//solution
 int countVowels(string str){
   
   int v=0;
