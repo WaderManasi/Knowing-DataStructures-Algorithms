@@ -13,11 +13,14 @@ int main()
     cout<<str1;*/
     string name,fname;
     cout<<"\nEnter full name: ";
-    cin>>name;
-    cout<<"\nEnter full name: ";
-    cout<<fname;
+    
     getline(cin,fname);
+    cout<<fname;
+    
+    cout<<"\nEnter full name: ";
+    cin>>name;
     cout<<name;
+    
     
     cout<<endl;
 }
