@@ -1,6 +1,5 @@
 //Calculate height of BST
 //solution
-
 int height(Node* root)
 {
   if(root==NULL)
