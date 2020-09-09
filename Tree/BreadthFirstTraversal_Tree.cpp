@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////////
 //Name     :Manasi Mohan Wader                                                   //
-//Program  :Breadth First Traversal in Binary Search Tree/level order display                                                   //
-//Language :CPP (Object Oriented Approach)                                      //
+//Program  :Breadth First Traversal in Binary Search Tree/level order display    //                                              //
+//Language :CPP (Object Oriented Approach)                                       //
 //Approach :Dynamic Approach using Linked Lists.                                 //
 ///////////////////////////////////////////////////////////////////////////////////
 #include<bits/stdc++.h>
