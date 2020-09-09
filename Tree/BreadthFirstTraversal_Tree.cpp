@@ -23,7 +23,12 @@ class Node
 }*root;
 class BST
 {
+    int ct;
     public:
+            BST()
+            {
+                ct=0;
+            }
             void Create(Node* root,int data);
             void BFS(Node* root);  
 };
@@ -62,11 +67,14 @@ void BST::BFS(Node* temp)
     {
         temp=q.front();
         cout<<temp->data<<" ";
+        ct++;
         q.pop();
          if(temp->left!=NULL)   q.push(temp->left);
         if(temp->right!=NULL)   q.push(temp->right);
        
     }
+
+    cout<<"\n\nTotal no. of nodes in tree: "<<ct<<"\n";
 }
 int main()
 {
