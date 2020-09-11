@@ -6,12 +6,13 @@ class string_intro
         //any operations performed on it return another object
         String str = "welcome";
         System.out.println(str.substring(3));
+        //str.reverse();                          //error since String class immutable
         System.out.println(str);                //we come to know that original string is not changed.
         System.out.println(); 
 
         //StringBuffer & StringBuffer are immutable
         StringBuffer str1=new StringBuffer("helloworld");
-        System.out.println(str1.substring(3));
+        str1.reverse();                         //succesfully reverse string being mutable
         System.out.println(str1);
        
         String s1 = "happy";
