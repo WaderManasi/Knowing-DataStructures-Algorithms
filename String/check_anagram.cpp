@@ -7,8 +7,12 @@ using namespace std;
   
 bool checkAnagram(string &str1, string &str2)
 {
-   
-    return true;
+    if(str1.length()!=str2.length())
+        return false;
+    sort(str1.begin(),str2.end());
+    sort(str2.begin(),str2.end());
+    
+    return str1==str2?true:false;
 }
 
 int main()
