@@ -10,9 +10,15 @@ using namespace std;
        
 bool checkPalin(string &str)
 {
-    string rev=str;
-    reverse(rev.begin(),rev.end());
-    return rev==str?true:false;
+    int beg=0,end=str.length()-1;
+    while(beg<end)
+    {
+        if(str[beg]!=str[end])
+        return false;
+        beg++;
+        end--;
+    }
+    return true;
 }
 
 int main()
