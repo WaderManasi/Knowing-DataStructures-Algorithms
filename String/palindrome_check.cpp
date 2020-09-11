@@ -1,4 +1,5 @@
 //solution: palindrome check
+//In c++ string is mutable
 
 #include<string>
 #include<bits/stdc++.h>
