@@ -1,6 +1,7 @@
 //solution: palindrome check
 //In c++ string is mutable
 
+//Auxilary space and time: theta(n)
 #include<string>
 #include<bits/stdc++.h>
 using namespace std;
