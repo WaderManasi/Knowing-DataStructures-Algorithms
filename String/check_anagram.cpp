@@ -1,5 +1,6 @@
 //solution: anagram check
 //In c++ string is mutable
+//time : O(nlogn)
                          
 #include<string>
 #include<bits/stdc++.h>
