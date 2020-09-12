@@ -26,8 +26,7 @@ int leftRepeat(string str){
 int main()
 {
     string str;
-    cin.ignore();
-    getline(cin,str);
+    cin>>str;
     
     cout<<leftRepeat(str)<<endl;
     return 0;
