@@ -1,6 +1,6 @@
 //Find left most repaeting character
 //solution: 
-//better approach
+//better approach: require loops but linear time
 
 #include<string>
 #include<bits/stdc++.h>
