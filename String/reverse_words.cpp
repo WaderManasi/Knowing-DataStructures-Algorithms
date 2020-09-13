@@ -1,4 +1,4 @@
-//You are given a string s. You need to reverse the string.
+//Given a String S, reverse the string without reversing its individual words. Words are separated by dots.
 //solution: 
 
 #include<string>
