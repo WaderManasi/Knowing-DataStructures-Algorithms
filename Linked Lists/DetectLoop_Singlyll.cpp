@@ -1,3 +1,5 @@
+//detect loop in singly linked list
+
 bool has_cycle(Node* head) {
     if(head==NULL) return false;
     Node* fast=head->next;
