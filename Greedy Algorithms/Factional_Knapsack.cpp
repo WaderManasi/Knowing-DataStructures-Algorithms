@@ -1,23 +1,26 @@
 //calculate ratio (val/wight) for every item
 //sort all items in decr order of ratio
-
 #include<bits/stdc++.h>
-
-int maxValue(int arr[][],int n)
+struct Item
 {
-    vector<int>v;
+    int value;
+    int weight;
+};
+bool compare(struct Item a, struct Item b)
+{
+
+}
+double fractionalKnapsack(int capacity,Item arr[], int n)
+{
+
 }
 int main()
 {
     int n,capacity;
-    cin>>n;
-    cin>>capacity;
-    int arr[n][n];
-    for(int i=0;i<n;i++)
-    {
-        for(int j=0;j<n;j++)
-        cin>>arr[i][j];
-    }
+    cout<<setprecision(2)<<fixed;
+    cin>>n>>capacity;
+    
+    struct Item
     cout<<maxValue(arr,n);
     return 0;
 }
