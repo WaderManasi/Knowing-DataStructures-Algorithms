@@ -4,3 +4,26 @@ Note: Consider that all the trains arrive on the same day and leave on the same 
 In such cases, we need different platforms, i.e at any given instance of time, same platform can not be used for both departure of a train and arrival of another.
 */
 
+//solution
+int findPlatform(int arr[], int dep[], int n)
+{
+	sort(arr,arr+n);
+	sort(dep,dep+n);
+	int platform=1;
+	int i=1,j=0,ans=1;
+	while(i<n && j<n)
+	{
+	    if(dep[j]>=arr[i])  //platform needed due to time clashing
+	    {
+	        platform++;
+	        i++;
+	        if(platform>ans)    ans=platform;
+	    }
+	    else
+	    {
+	        j++;
+	        platform--;
+	    }
+	}
+	return ans;
+}
