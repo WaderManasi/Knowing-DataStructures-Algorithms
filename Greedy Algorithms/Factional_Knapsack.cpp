@@ -1,9 +1,11 @@
 //calculate ratio (val/wight) for every item
+//sort all items in decr order of ratio
+
 #include<bits/stdc++.h>
 
 int maxValue(int arr[][],int n)
 {
-
+    vector<int>v;
 }
 int main()
 {
