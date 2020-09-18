@@ -1,5 +1,5 @@
 //calculate ratio (val/wight) for every item
-//sort all items in decr order of ratio
+//sort jobs in decreasing order of profit
 #include<bits/stdc++.h>
 using namespace std;
 struct Job
@@ -7,39 +7,27 @@ struct Job
     int deadline;
     int profit;
 };
-bool compare(struct Item a, struct Item b)
+bool compare(struct Job a, struct Job b)
 {
-    int r1=(double)a.value/a.weight;
-    int r2=(double)b.value/b.weight;
-    return r1>r2;
+    return a.profit>b.profit;
 }
 int jobSequencing(Job arr[], int n)
 {
-    sort(arr,arr+n,compare);    //array sorted according to ratio (value/weight)
-    double current_value=0.0;
-    for(int i=0;i<n;i++)
-    {
-        if(arr[i].weight<=capacity)
-        {
-            capacity-=arr[i].weight;
-            current_value+=arr[i].value;
-        }
-        else
-        {
-            current_value+=capacity*(double)arr[i].value/arr[i].weight;
-            break;
-        }
-    }
-    return current_value;
+    sort(arr,arr+n,compare);    //array sorted according to profit
+    bool visit[n]=false;
+    int max_profit=0;
+    
+    return max_profit;
 }
 int main()
 {
     int n,capacity;
     //array of structures
+    cin>>n;
     Job arr[n];
     for(int i=0;i<n;i++)
     {
-        cin>>arr[i].value>>arr[i].weight;   
+        cin>>arr[i].deadline>>arr[i].profit;   
     }
     cout<<jobSequencing(arr,n);
     return 0;
