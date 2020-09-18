@@ -1,5 +1,3 @@
-//calculate ratio (val/wight) for every item
-//sort jobs in decreasing order of profit
 #include<bits/stdc++.h>
 using namespace std;
 struct Job
@@ -14,9 +12,20 @@ bool compare(struct Job a, struct Job b)
 int jobSequencing(Job arr[], int n)
 {
     sort(arr,arr+n,compare);    //array sorted according to profit
-    bool visit[n]=false;
+    bool visit[n]={false};
     int max_profit=0;
-    
+    for(int i=0;i<n;i++)
+    {
+        for(int j=min(n,arr[i].deadline-1);j>=0;j--)
+        {
+            if(visit[j]==false)
+            {
+                visit[j]=true;
+                max_profit+=arr[i].profit;
+                break;
+            }
+        }
+    }
     return max_profit;
 }
 int main()
