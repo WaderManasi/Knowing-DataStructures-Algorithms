@@ -38,6 +38,7 @@ int main()
     cout<<setprecision(2)<<fixed;
     cin>>n>>capacity;
     //array of structures
+    
     Item arr[n];
     for(int i=0;i<n;i++)
     {
