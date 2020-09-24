@@ -3,7 +3,6 @@
 
 #include <bits/stdc++.h>
 #include<algorithm>
-
 using namespace std;
 bool check(long long int arr[],long long brr[],long long int n)
 {
