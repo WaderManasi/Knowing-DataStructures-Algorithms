@@ -1,4 +1,4 @@
-## Daily Commit :clock2: :stars:
+
 ### *Contributions are Welcomed!* :sparkles:
 # Knowing-DataStructures-Algorithms
 Repository contains code of various Data-structures, Advanced Data-Structures, Algorithms as well as Pre-placement course material including topics - 
