@@ -1,0 +1,177 @@
+
+#include<iostream>
+#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
+
+// UNION FIND DATA STRUCTURE
+class Union_find
+{
+    int Number_of_nodes;
+    int no_of_components;
+    int *a;
+    int *size;
+
+public:
+    Union_find(int nodes)
+    {
+        Number_of_nodes = nodes;
+        no_of_components = nodes;
+        a = new int[nodes];
+        size = new int[nodes];
+
+        for(int i=0;i<nodes;i++)
+        {
+            a[i] = i;
+            size[i] = 1;
+        }
+    }
+
+    int find(int x)
+    {
+        int val = x;
+        while(val!= a[val]) {
+            val = a[val];
+        }
+
+
+
+        while(x!=val)
+        {
+            int next = a[x];
+            a[x] = val;
+            x = next;
+        }
+        return val;
+
+    }
+
+    bool connected(int x,int y)
+    {
+        return a[x] == a[y];
+    }
+
+    int size_of_component(int x)
+    {
+        return(size[find(x)]);
+    }
+
+    void unify(int x, int y)
+    {
+        if(find(x) == find(y))
+            return;
+        int r1 = find(x);
+        int r2 = find(y);
+        if(size[r1]<size[r2])
+        {
+            size[r2] += size[r1];
+            a[r1] = r2;
+        }else
+        {
+            size[r1] += size[r2];
+            a[r2] = r1;
+
+        }
+
+
+
+    }
+};
+
+class edge
+{
+
+
+public:
+    int start;
+    int end;
+    int weight;
+
+    edge(int a, int b, int c)
+    {
+        start = a;
+        end = b;
+        weight = c;
+    }
+
+
+
+    bool operator <(edge x)
+    {
+        return(weight<x.weight);
+    }
+};
+
+vector<edge> krushkal(vector<edge> a,int n, int v)
+{
+    sort(a.begin(),a.end());
+    Union_find uf(v);
+    int MST_W =0;
+    vector<edge> MST;
+    for(int i= 0; i<n; i++)
+    {
+        int start = a[i].start;
+        int end = a[i].end;
+
+        if(uf.find(start) != uf.find(end))
+        {
+            MST.push_back(a[i]);
+            uf.unify(start,end);
+            MST_W += a[i].weight;
+        }
+
+    }
+    cout<<"Weight of the minimum spanning tree is : "<<MST_W<<endl;
+    
+    return(MST);
+}
+
+class graph
+{
+public:
+    vector<edge> a;
+
+    graph()
+    {
+
+    }
+
+    void addEdge(int x,int y, int z)
+    {
+        a.push_back(edge(x,y,z));
+    }
+
+};
+
+int main()
+{ 
+    graph g;
+    // Add your graph edges in this fashion
+    g.addEdge(0,1,5);
+    g.addEdge(0,2,2);
+    g.addEdge(1,2,2);
+    g.addEdge(1,4,7);
+    g.addEdge(4,5,8);
+    g.addEdge(2,3,3);
+    g.addEdge(5,8,4);
+    g.addEdge(5,7,3);
+    g.addEdge(6,7,2);
+    g.addEdge(3,4,2);
+    g.addEdge(3,6,6);
+    g.addEdge(4,7,7);
+    g.addEdge(2,6,9);
+    g.addEdge(1,3,3);
+    g.addEdge(4,6,5);
+
+
+
+    vector<edge> MST;
+    MST = krushkal(g.a,15,9);
+
+    for(edge e: MST)
+    {
+        cout<<e.start+1<<"  "<<e.end+1<<"  "<<e.weight<<endl;
+    }
+
+
+}
