@@ -1,4 +1,6 @@
-
+/*
+It's an important graph algorithm which uses Union find data structure to find the minimum cost spanning tree in a graph. 
+*/
 #include<iostream>
 #include <vector>
 #include <bits/stdc++.h>
