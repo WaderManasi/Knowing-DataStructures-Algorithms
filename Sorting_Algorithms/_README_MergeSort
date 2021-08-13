@@ -1,0 +1,21 @@
+
+*********************MERGE SORT*********************
+
+1]It is an example of "Divide and Conquer" strategy.
+2]Merging is the process of combining two sorted files to make one bigger sorted file.
+3]Selection and merging are opposite operations:
+○ Selection splits a list into two lists.
+○ Merging joins two files to make one file.
+
+4]Merge sort is Quick sort's complement.
+  To know about Quick Sort: Check here :--
+
+5]Merge sort divides the list into two parts then each part is Conquered Individually.
+6]Merge sort is stable.
+
+7]In merge sort input list is divided into 2 parts and solved recursively.
+Performance
+Worst case complexity : O(nlogn)
+Best case complexity : O(nlogn)
+Average case complexity : O(nlogn)
+Worst case space complexity: O(n) auxiliary
