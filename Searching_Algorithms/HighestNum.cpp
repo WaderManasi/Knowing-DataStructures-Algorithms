@@ -1,4 +1,5 @@
-//Given an array in such a way that the elements stored in array are in increasing order initially and then after reaching to a peak element , elements stored are in decreasing order. Find the highest element.
+//Given an array in such a way that the elements stored in array are in increasing order initially and then after reaching to a peak element , elements stored are in decreasing order.
+//Find the highest element.
 //Note: A[i] != A[i+1]
 class Solution {
 public:
