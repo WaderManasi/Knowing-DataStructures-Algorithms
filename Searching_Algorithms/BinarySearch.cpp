@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int binarySearch(int arr[],int n, int key)
+int orderAgnosticBinarySearch(int arr[],int n, int key)
 {
     int s=0, e=n-1, mid=0;
     //check wheather array is sorted in ascending order or descending order
@@ -61,7 +61,7 @@ int main()
     for(int i=0;i<n;i++)
     cin>>arr[i];
     cin>>target;
-    cout<<"Element found at position: "<<binarySearch(arr,n,target);
+    cout<<"Element found at position: "<<orderAgnosticBinarySearch(arr,n,target);
     
     return 0;
 }
