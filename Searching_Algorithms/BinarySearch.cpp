@@ -4,18 +4,18 @@ using namespace std;
 int binarySearch(int arr[],int n, int key)
 {
     int s=0, e=0, mid=0;
-    mid=n/2;
-
-    if(arr[mid]==key)
-    return n/2;
-    else if(key < arr[mid]){
-        e=mid-1;
-    }
-    else{
-        s=mid+1;
+    while(s<=e){
+        mid=s+((e-s)/2);
+        if(arr[mid]==key)
+            return n/2;
+        else if(key < arr[mid]){
+            e=mid-1;
+                }
+        else{
+            s=mid+1;
+            }
     }
     // element not found
-    if(s>e)
     return -1;
 }
 int main()
