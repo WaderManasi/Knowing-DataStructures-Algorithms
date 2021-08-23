@@ -3,17 +3,19 @@ using namespace std;
 
 int binarySearch(int arr[],int n, int key)
 {
-    int s=0, e=0, mid=0;
+    int s=0, e=n-1, mid=0;
     while(s<=e){
-        mid=s+((e-s)/2);
-        if(arr[mid]==key)
-            return mid;
-        else if(key < arr[mid]){
+        mid=s+(e-s)/2;
+        if(key < arr[mid]){
             e=mid-1;
                 }
-        else{
+        else if(key > arr[mid]){
             s=mid+1;
             }
+            else
+            {
+                return mid;
+            }   
     }
     // element not found
     return -1;
