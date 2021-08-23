@@ -1,3 +1,4 @@
+//Given a number N. Find the length of the longest consecutive 1s in its binary representation.
 class Solution
 {
     public:
