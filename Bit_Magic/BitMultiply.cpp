@@ -1,4 +1,5 @@
-//Given a number N. Find the product of the number of setbits and the number itself.
+//Given a number N.
+//Find the product of the number of setbits and the number itself.
 
 class Solution{
     public:
