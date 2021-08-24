@@ -7,7 +7,6 @@ public:
         v[1]=find(nums,target, false);
         return v;
     }
-    
     int find(vector<int>& nums, int target, bool si)
     {
         int ans=-1;
