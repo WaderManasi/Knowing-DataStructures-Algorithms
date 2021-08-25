@@ -1,39 +1,42 @@
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
+        //initiall vector
         vector<int>v={-1,-1};
-        v[0]=find(nums,target, true);
-        if(v[0]!=-1)
-        v[1]=find(nums,target, false);
+        
+        //brute force: start from 0th index with one ptr, n from end-1 index with another ptr
+        
+        //efficient approach
+        
+        v[0]=getElement(nums,target,true); //search in first half
+        
+        // if target element is present
+        if(v[0]!=-1)    
+            v[1]=getElement(nums,target,false); //search in second half
+        
         return v;
     }
-    int find(vector<int>& nums, int target, bool si)
-    {
-        int ans=-1;
-        int n=nums.size();
-        int mid=0,s=0,e=n-1;
-        while(s<=e)
-        {
+    int getElement(vector<int>& nums, int target, bool isStartIndex){
+        int mid=0, ans=-1, s=0, e=nums.size()-1;
+        while(s<=e){    
             mid=s+(e-s)/2;
-            if(target<nums[mid])
-            {
+            if(target<nums[mid]){
                 e=mid-1;
             }
-            else if(target>nums[mid])
-            {
+            else if(target>nums[mid]){
                 s=mid+1;
             }
-            else
-            {
+            else{ //target == arr[mid]
                 ans=mid;
-                if(si)
-                {
+                if(isStartIndex){
                     e=mid-1;
-                }else{
+                }
+                else{
                     s=mid+1;
                 }
             }
         }
         return ans;
     }
+    
 };
