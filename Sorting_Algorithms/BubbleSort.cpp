@@ -19,7 +19,7 @@ void bubbleSort(int arr[],int n){
         if(!swapp)      break;  //all elements are sorted
     }
   
-  //printing 
+    //printing the sorted array
     for(int i=0;i<5;i++)  cout<<arr[i]<<" ";
 }
 int main()
