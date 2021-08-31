@@ -1,7 +1,7 @@
 /******************************************************************************
 
 Selection sort
-(unstable sort) (worst case == best case complexity)
+(unstable sort) (worst case == best case 0(N^2) complexity)
 
 *******************************************************************************/
 #include <bits/stdc++.h>
