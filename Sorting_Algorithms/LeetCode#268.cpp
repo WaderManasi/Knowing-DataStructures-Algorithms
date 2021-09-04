@@ -1,5 +1,7 @@
 //https://leetcode.com/problems/missing-number/
 
+//EASY 
+
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
